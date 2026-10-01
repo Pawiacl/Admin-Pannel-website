@@ -1,0 +1,134 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.login-form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  outline: none;
+  font-size: 15px;
+}
+
+.login-input:focus {
+  border-color: #2563eb;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}
+
+.login-links {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.login-links p {
+  margin-bottom: 12px;
+}
+
+.login-links a {
+  display: block;
+  margin: 8px 0;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* =============================================
+   LOGIN ERROR POPUP
+============================================= */
+
+.login-error-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+.login-error-card {
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.login-error-card h3 {
+  margin: 0 0 15px;
+}
+
+.login-error-card p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.login-error-button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-error-button:hover {
+  opacity: 0.9;
+}
+

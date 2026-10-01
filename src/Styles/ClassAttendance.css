@@ -1,0 +1,321 @@
+/* =====================================================
+   CLASS ATTENDANCE PAGE
+===================================================== */
+
+.class-attendance-page {
+  width: 100%;
+  padding: 25px 30px;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.class-attendance-header {
+  margin-bottom: 20px;
+}
+
+.class-attendance-header h1 {
+  margin: 10px 0 4px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.class-attendance-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.attendance-back-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #1976d2;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.attendance-back-button:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   SUMMARY CARDS
+===================================================== */
+
+.attendance-summary {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.attendance-summary-card {
+  width: 140px;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+}
+
+.attendance-summary-card .common-card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attendance-summary-card h3 {
+  margin: 0 0 3px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.attendance-summary-card p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+
+/* =====================================================
+   CONTROLS
+===================================================== */
+
+.class-attendance-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.section-control,
+.search-control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.section-control label,
+.search-control label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
+
+
+/* =====================================================
+   SECTION SELECT
+===================================================== */
+
+.section-control select {
+  width: 130px;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.section-control select:focus {
+  border-color: #1976d2;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-control input {
+  width: 260px;
+  height: 38px;
+  padding: 0 11px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-control input::placeholder {
+  color: #9ca3af;
+}
+
+.search-control input:focus {
+  border-color: #1976d2;
+}
+
+
+/* =====================================================
+   MESSAGES
+===================================================== */
+
+.attendance-success-message {
+  margin: 8px 0 14px;
+  padding: 9px 13px;
+  border-radius: 6px;
+  background: #ecfdf5;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  font-size: 13px;
+}
+
+.attendance-error-message {
+  margin: 8px 0 14px;
+  padding: 9px 13px;
+  border-radius: 6px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   ATTENDANCE GRID WRAPPER
+===================================================== */
+
+.attendance-grid-container {
+  width: 100%;
+  margin-top: 8px;
+  overflow-x: auto;
+}
+
+
+/* =====================================================
+   ATTENDANCE RADIO BUTTONS
+===================================================== */
+
+.attendance-radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.attendance-radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+}
+
+.attendance-radio-group input[type="radio"] {
+  margin: 0;
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   REMARKS
+===================================================== */
+
+.attendance-remarks-input {
+  width: 100%;
+  max-width: 220px;
+  height: 32px;
+  padding: 0 9px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 13px;
+  outline: none;
+}
+
+.attendance-remarks-input::placeholder {
+  color: #9ca3af;
+}
+
+.attendance-remarks-input:focus {
+  border-color: #1976d2;
+}
+
+
+/* =====================================================
+   ABSENT STUDENT - REMARKS REQUIRED
+===================================================== */
+
+.attendance-remarks-input.remarks-required {
+  border: 2px solid #dc2626;
+  background-color: #fff5f5;
+}
+
+.attendance-remarks-input.remarks-required::placeholder {
+  color: #dc2626;
+}
+
+.attendance-remarks-input.remarks-required:focus {
+  border: 2px solid #dc2626;
+  background-color: #fff5f5;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.15);
+}
+
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
+.attendance-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 9px;
+  margin-top: 18px;
+  padding-bottom: 10px;
+}
+
+.attendance-action-buttons button {
+  min-width: 90px;
+  height: 38px;
+  padding: 0 15px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   SAVE
+===================================================== */
+
+.attendance-save-button {
+  background: #ffffff;
+  border: 1px solid #1976d2;
+  color: #1976d2;
+}
+
+.attendance-save-button:hover {
+  background: #eff6ff;
+}
+
+
+/* =====================================================
+   SUBMIT
+===================================================== */
+
+.attendance-submit-button {
+  background: #1976d2;
+  border: 1px solid #1976d2;
+  color: #ffffff;
+}

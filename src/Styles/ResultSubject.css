@@ -1,0 +1,263 @@
+/* =========================================
+   RESULT SUBJECT PAGE
+========================================= */
+
+.result-subject-page {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.result-subject-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 28px;
+}
+
+.result-subject-header h1 {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.result-subject-header p {
+  margin: 6px 0 0;
+
+  font-size: 14px;
+  color: #777;
+}
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.result-subject-back-button {
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.result-subject-back-button:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   SUBJECT CARDS
+========================================= */
+
+.result-subject-cards {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(220px, 220px)
+  );
+
+  gap: 24px;
+
+  align-items: start;
+}
+
+/* =========================================
+   CARD WRAPPER
+========================================= */
+
+.result-subject-card-wrapper {
+  width: 220px;
+}
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.result-subject-card {
+  width: 220px;
+  height: 220px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.result-subject-card-content {
+  width: 100%;
+  height: 100%;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.result-subject-card-content h2 {
+  margin: 0 0 10px;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.result-subject-card-content p {
+  margin: 0 0 6px;
+
+  font-size: 14px;
+  color: #777;
+}
+
+.result-subject-card-content span {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================
+   VIEW STUDENTS BUTTON
+========================================= */
+
+.result-subject-view-button {
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.result-subject-view-button:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.result-subject-loading {
+  width: 100%;
+
+  padding: 60px 20px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  font-size: 15px;
+  color: #777;
+}
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.result-subject-empty {
+  grid-column: 1 / -1;
+
+  padding: 50px 20px;
+
+  text-align: center;
+
+  font-size: 15px;
+  color: #777;
+}
+
+.result-subject-empty h2 {
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .result-subject-page {
+    padding: 20px;
+  }
+
+  .result-subject-cards {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 200px)
+    );
+
+    gap: 20px;
+  }
+
+  .result-subject-card-wrapper,
+  .result-subject-card {
+    width: 200px;
+  }
+
+  .result-subject-card {
+    height: 200px;
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+  .result-subject-page {
+    padding: 16px;
+  }
+
+  .result-subject-header {
+    align-items: flex-start;
+  }
+
+  .result-subject-header h1 {
+    font-size: 24px;
+  }
+
+  .result-subject-cards {
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+  }
+
+  .result-subject-card-wrapper,
+  .result-subject-card {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .result-subject-card {
+    height: 220px;
+  }
+
+}

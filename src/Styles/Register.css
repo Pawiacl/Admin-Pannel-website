@@ -1,0 +1,147 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 500px;
+
+  border-radius: 12px;
+  border: none;
+
+  box-shadow:
+    0 8px 25px
+    rgba(0, 0, 0, 0.08);
+}
+
+.register-card .common-card-body {
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.register-card h1 {
+  text-align: center;
+  margin: 0 0 30px;
+  font-size: 28px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.register-form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.form-input:focus {
+  border-color: #2563eb;
+}
+
+.button-group {
+  display: flex !important;
+  flex-direction: row !important;
+
+  gap: 10px !important;
+
+  margin-top: 8px;
+
+  width: 100%;
+}
+
+.btn {
+  height: 48px;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap !important;
+
+  padding: 12px 8px !important;
+
+  flex-shrink: 0 !important;
+
+  cursor: pointer;
+}
+
+.btn-save {
+  width: 100px !important;
+  min-width: 100px !important;
+
+  flex: none !important;
+
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.btn-submit {
+  width: 210px !important;
+  min-width: 210px !important;
+
+  flex: none !important;
+
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.btn-cancel {
+  width: 100px !important;
+  min-width: 100px !important;
+
+  flex: none !important;
+
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  margin: 0 0 18px;
+
+  padding: 10px 12px;
+
+  border-radius: 6px;
+
+  background: #fee2e2;
+  color: #b91c1c;
+
+  font-size: 14px;
+}

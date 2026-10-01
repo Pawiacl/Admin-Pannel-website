@@ -1,0 +1,465 @@
+.assign-class-teacher-page {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   COMMON CARD OVERRIDES
+========================================= */
+
+.assign-class-teacher-card {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.assigned-class-teachers-card {
+  width: 100%;
+}
+
+/* =========================================
+   MAIN HEADER
+========================================= */
+
+.assign-class-teacher-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid #e1e5ea;
+}
+
+.assign-class-teacher-header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.assign-class-teacher-header p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* =========================================
+   BACK
+========================================= */
+
+.assign-class-teacher-back-button {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  padding: 7px 13px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.assign-class-teacher-back-button:hover {
+  background: #f3f4f6;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.assign-class-teacher-form {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  padding: 18px 20px;
+}
+
+/* =========================================
+   FIELD
+========================================= */
+
+.assign-class-teacher-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.assign-class-teacher-field label {
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.assign-class-teacher-field select {
+  width: 100%;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 13px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.assign-class-teacher-field select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.12);
+}
+
+.assign-class-teacher-field select:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.assign-class-teacher-error {
+  grid-column: 1 / -1;
+  padding: 9px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 5px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.assign-class-teacher-success {
+  grid-column: 1 / -1;
+  padding: 9px 12px;
+  border: 1px solid #bbf7d0;
+  border-radius: 5px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-size: 13px;
+}
+
+/* =========================================
+   BUTTON AREA
+========================================= */
+
+.assign-class-teacher-form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* =========================================
+   ASSIGN BUTTON
+========================================= */
+
+.assign-class-teacher-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #5b9ded;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.assign-class-teacher-button:hover {
+  background: #4285df;
+}
+
+.assign-class-teacher-button:disabled {
+  background: #a8c9f3;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   ASSIGNED COUNT
+========================================= */
+
+.assigned-class-teachers-count {
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================================
+   ACTION CELL
+========================================= */
+
+.assigned-class-teachers-actions-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* =========================================
+   EDIT
+========================================= */
+
+.assigned-class-teacher-edit-button {
+  min-width: 50px;
+  padding: 5px 12px;
+  border: 1px solid #93c5fd;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #2563eb;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.assigned-class-teacher-edit-button:hover {
+  background: #eff6ff;
+}
+
+/* =========================================
+   DELETE
+========================================= */
+
+.assigned-class-teacher-delete-button {
+  min-width: 56px;
+  padding: 5px 12px;
+  border: 1px solid #fca5a5;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #dc2626;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.assigned-class-teacher-delete-button:hover {
+  background: #fef2f2;
+}
+
+.assigned-class-teacher-delete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   DELETE ERROR
+========================================= */
+
+.assigned-class-teacher-delete-error {
+  margin: 14px 20px 0;
+  padding: 9px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 5px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+/* =========================================
+   EDIT MODAL OVERLAY
+========================================= */
+
+.edit-class-teacher-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.45);
+  box-sizing: border-box;
+}
+
+/* =========================================
+   COMMON CARD EDIT MODAL
+========================================= */
+
+.edit-class-teacher-card {
+  width: 100%;
+  max-width: 650px;
+}
+
+/* =========================================
+   EDIT HEADER
+========================================= */
+
+.edit-class-teacher-close {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.edit-class-teacher-close:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+/* =========================================
+   EDIT FORM
+========================================= */
+
+.edit-class-teacher-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* =========================================
+   EDIT FIELD
+========================================= */
+
+.edit-class-teacher-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-class-teacher-field label {
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.edit-class-teacher-field select {
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 13px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.edit-class-teacher-field select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.12);
+}
+
+/* =========================================
+   EDIT ERROR
+========================================= */
+
+.edit-class-teacher-error {
+  grid-column: 1 / -1;
+  padding: 9px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 5px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+/* =========================================
+   EDIT ACTIONS
+========================================= */
+
+.edit-class-teacher-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* =========================================
+   CANCEL
+========================================= */
+
+.edit-class-teacher-cancel {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.edit-class-teacher-cancel:hover {
+  background: #f3f4f6;
+}
+
+/* =========================================
+   UPDATE
+========================================= */
+
+.edit-class-teacher-update {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  background: #5b9ded;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-class-teacher-update:hover {
+  background: #4285df;
+}
+
+.edit-class-teacher-update:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+  .assign-class-teacher-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .assign-class-teacher-page {
+    padding: 12px;
+  }
+
+  .assign-class-teacher-form {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-class-teacher-form {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-class-teacher-actions {
+    flex-direction: column-reverse;
+  }
+
+  .edit-class-teacher-cancel,
+  .edit-class-teacher-update {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .assign-class-teacher-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .assigned-class-teachers-count {
+    min-width: 28px;
+    height: 28px;
+  }
+
+  .edit-class-teacher-overlay {
+    padding: 10px;
+  }
+}

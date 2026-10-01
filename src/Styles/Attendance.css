@@ -1,0 +1,133 @@
+/* =====================================================
+   ATTENDANCE PAGE
+===================================================== */
+
+.attendance-page {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.attendance-header {
+  margin-bottom: 25px;
+}
+
+.attendance-page h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* =====================================================
+   SUBTITLE
+===================================================== */
+
+.attendance-subtitle {
+  margin: 8px 0 0;
+  font-size: 15px;
+  color: #666;
+}
+
+/* =====================================================
+   CLASS CARDS
+===================================================== */
+
+.class-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* =====================================================
+   COMMON CARD - PAGE SPECIFIC STYLE ONLY
+===================================================== */
+
+.class-card {
+  width: 100%;
+  min-height: 120px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #222;
+}
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.attendance-loading {
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  font-size: 14px;
+  color: #666;
+}
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.attendance-empty {
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  border: 1px dashed #d5d9df;
+  border-radius: 8px;
+
+  background: #fafafa;
+
+  font-size: 14px;
+  color: #666;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+  .class-cards {
+    grid-template-columns: repeat(
+      3,
+      minmax(0, 1fr)
+    );
+  }
+}
+
+@media (max-width: 700px) {
+  .attendance-page {
+    padding: 20px;
+  }
+
+  .class-cards {
+    grid-template-columns: repeat(
+      2,
+      minmax(0, 1fr)
+    );
+  }
+}
+
+@media (max-width: 450px) {
+  .attendance-page {
+    padding: 15px;
+  }
+
+  .class-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .class-card {
+    min-height: 100px;
+  }
+}

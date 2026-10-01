@@ -1,0 +1,412 @@
+/* =====================================================
+   COMMON CARD
+   Single reusable card style for the whole project
+===================================================== */
+
+.common-card {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+
+  border: 1px solid #dedede;
+
+  border-radius: 8px;
+
+  color: #111111;
+
+  overflow: visible;
+
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+
+}
+
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.common-card-body {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   NORMAL CARD PADDING
+===================================================== */
+
+.common-card-padding .common-card-body {
+
+  padding: 20px;
+
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.common-card-header {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 16px 20px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+}
+
+
+/* =====================================================
+   HEADER CONTENT
+===================================================== */
+
+.common-card-header-content {
+
+  min-width: 0;
+
+}
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.common-card-title {
+
+  margin: 0;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #222222;
+
+}
+
+
+/* =====================================================
+   CARD SUBTITLE
+===================================================== */
+
+.common-card-subtitle {
+
+  margin: 4px 0 0;
+
+  font-size: 14px;
+
+  color: #777777;
+
+}
+
+
+/* =====================================================
+   CARD ACTIONS
+===================================================== */
+
+.common-card-actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.common-card-hover:hover {
+
+  background-color: #fafafa;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-2px);
+
+}
+
+
+/* =====================================================
+   CLICKABLE CARD
+===================================================== */
+
+.common-card-clickable {
+
+  cursor: pointer;
+
+}
+
+
+/* =====================================================
+   CLICKABLE ACTIVE
+===================================================== */
+
+.common-card-clickable:active {
+
+  transform: translateY(0);
+
+}
+
+
+/* =====================================================
+   VARIANT - DEFAULT
+===================================================== */
+
+.common-card-default {
+
+  border-radius: 8px;
+
+}
+
+
+/* =====================================================
+   VARIANT - ROUNDED
+===================================================== */
+
+.common-card-rounded {
+
+  border-radius: 12px;
+
+}
+
+
+/* =====================================================
+   VARIANT - COMPACT
+===================================================== */
+
+.common-card-compact {
+
+  border-radius: 7px;
+
+}
+
+
+.common-card-compact .common-card-body {
+
+  padding: 10px 14px;
+
+}
+
+
+/* =====================================================
+   VARIANT - SUMMARY
+===================================================== */
+
+.common-card-summary {
+
+  width: 140px;
+
+  min-height: 68px;
+
+  border-radius: 7px;
+
+}
+
+
+.common-card-summary .common-card-body {
+
+  padding: 10px 14px;
+
+}
+
+
+/* =====================================================
+   VARIANT - GRID
+===================================================== */
+
+.common-card-grid {
+
+  width: 100%;
+
+  min-height: 103px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+}
+
+
+.common-card-grid .common-card-body {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   REMARKS CARD
+===================================================== */
+
+.common-card.remarks-modal-card {
+
+  width: 520px;
+
+  max-width: calc(100vw - 40px);
+
+  min-height: 320px;
+
+  border-radius: 12px;
+
+}
+
+
+/* =====================================================
+   REMARKS CARD BODY
+===================================================== */
+
+.common-card.remarks-modal-card .common-card-body {
+
+  padding: 24px;
+
+}
+
+
+/* =====================================================
+   REMARKS TEXTAREA
+===================================================== */
+
+.common-card.remarks-modal-card textarea {
+
+  width: 100%;
+
+  min-height: 140px;
+
+  padding: 12px 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 7px;
+
+  background-color: #ffffff;
+
+  color: #333333;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  outline: none;
+
+  resize: vertical;
+
+}
+
+
+/* =====================================================
+   REMARKS TEXTAREA FOCUS
+===================================================== */
+
+.common-card.remarks-modal-card textarea:focus {
+
+  border-color: #1976d2;
+
+  box-shadow:
+    0 0 0 2px rgba(25, 118, 210, 0.12);
+
+}
+
+
+/* =====================================================
+   REMARKS TEXTAREA PLACEHOLDER
+===================================================== */
+
+.common-card.remarks-modal-card textarea::placeholder {
+
+  color: #999999;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .common-card-header {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+
+  .common-card-actions {
+
+    width: 100%;
+
+  }
+
+
+  .common-card-padding .common-card-body {
+
+    padding: 16px;
+
+  }
+
+
+  .common-card.remarks-modal-card {
+
+    width: calc(100vw - 30px);
+
+    max-width: none;
+
+  }
+
+
+  .common-card.remarks-modal-card .common-card-body {
+
+    padding: 20px;
+
+  }
+
+}

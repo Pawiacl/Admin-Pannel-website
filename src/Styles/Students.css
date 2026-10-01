@@ -1,0 +1,386 @@
+/* =====================================================
+   STUDENTS PAGE
+===================================================== */
+
+.students-page {
+  width: 100%;
+}
+
+/* =====================================================
+   PAGE TITLE
+===================================================== */
+
+.students-page h1 {
+  margin: 0 0 25px 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* =====================================================
+   STUDENT SUMMARY
+===================================================== */
+
+.students-summary {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/* =====================================================
+   SUMMARY CARD
+===================================================== */
+
+/*
+  CommonCard handles the common card structure.
+
+  This class handles only
+  Students-page specific layout.
+*/
+
+.student-summary-card {
+  width: 220px;
+  min-height: 90px;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   COMMON CARD BODY
+===================================================== */
+
+.student-summary-card .common-card-body {
+  width: 100%;
+  min-height: 90px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 6px;
+
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   SUMMARY TITLE
+===================================================== */
+
+.student-summary-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+}
+
+/* =====================================================
+   SUMMARY COUNT
+===================================================== */
+
+.student-summary-count {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222222;
+}
+
+/* =====================================================
+   SEARCH BAR
+===================================================== */
+
+.students-search-container {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.students-search-input {
+  width: 280px;
+  height: 40px;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  font-size: 14px;
+  color: #333333;
+
+  outline: none;
+}
+
+.students-search-input::placeholder {
+  color: #999999;
+}
+
+.students-search-input:focus {
+  border-color: #1976d2;
+}
+
+/* =====================================================
+   EDIT OVERLAY
+===================================================== */
+
+.student-edit-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   EDIT MODAL
+===================================================== */
+
+/*
+  CommonCard handles:
+  - background
+  - border
+  - border-radius
+  - common card structure
+
+  This class handles only:
+  - modal width
+  - modal height
+  - scroll behavior
+*/
+
+.student-edit-modal {
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* =====================================================
+   EDIT CLOSE BUTTON
+===================================================== */
+
+.student-edit-close {
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f1f1f1;
+
+  font-size: 22px;
+  line-height: 1;
+
+  color: #555555;
+
+  cursor: pointer;
+}
+
+.student-edit-close:hover {
+  background: #e5e5e5;
+}
+
+/* =====================================================
+   EDIT FORM
+===================================================== */
+
+.student-edit-form {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+.student-form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.student-form-group label {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #444444;
+}
+
+.student-form-group input {
+  width: 100%;
+  height: 40px;
+
+  padding: 0 11px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  font-size: 14px;
+
+  color: #333333;
+
+  outline: none;
+}
+
+.student-form-group input:focus {
+  border-color: #1976d2;
+}
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.student-edit-success,
+.student-edit-error {
+  grid-column: 1 / -1;
+
+  padding: 10px 12px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+}
+
+.student-edit-success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.student-edit-error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/* =====================================================
+   EDIT ACTIONS
+===================================================== */
+
+.student-edit-actions {
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding-top: 5px;
+}
+
+/* =====================================================
+   CANCEL BUTTON
+===================================================== */
+
+.student-cancel-button,
+.student-save-button {
+  height: 40px;
+
+  padding: 0 18px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.student-cancel-button {
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  color: #444444;
+}
+
+.student-cancel-button:hover {
+  background: #f5f5f5;
+}
+
+/* =====================================================
+   SAVE BUTTON
+===================================================== */
+
+.student-save-button {
+  border: none;
+
+  background: #1976d2;
+
+  color: #ffffff;
+}
+
+.student-save-button:hover {
+  background: #1565c0;
+}
+
+.student-save-button:disabled,
+.student-cancel-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+  .students-summary {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .student-summary-card {
+    width: 100%;
+  }
+
+  .student-summary-card .common-card-body {
+    width: 100%;
+  }
+
+  .students-search-container {
+    justify-content: flex-start;
+  }
+
+  .students-search-input {
+    width: 100%;
+  }
+
+  .student-edit-form {
+    grid-template-columns: 1fr;
+  }
+
+  .student-edit-actions {
+    grid-column: 1;
+  }
+
+  .student-edit-success,
+  .student-edit-error {
+    grid-column: 1;
+  }
+}

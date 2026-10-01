@@ -1,0 +1,157 @@
+.exam-types-page {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.exam-types-header {
+  margin-bottom: 28px;
+}
+
+.exam-types-header h1 {
+  margin: 8px 0 4px;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.exam-types-header p {
+  margin: 0;
+
+  font-size: 14px;
+  color: #666;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.exam-types-back-button {
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #333;
+}
+
+.exam-types-back-button:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.exam-types-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(240px, 1fr)
+    );
+
+  gap: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.exam-type-card {
+  min-height: 160px;
+}
+
+.exam-type-card-content {
+  padding: 24px;
+}
+
+.exam-type-card-content h2 {
+  margin: 0 0 12px;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.exam-type-card-content p {
+  margin: 0 0 18px;
+
+  font-size: 14px;
+  color: #666;
+}
+
+.exam-type-card-content span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.exam-types-loading {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 40px 20px;
+
+  text-align: center;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #fff;
+
+  color: #666;
+}
+
+/* =========================
+   EMPTY
+========================= */
+
+.exam-types-empty {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 40px 20px;
+
+  text-align: center;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #fff;
+
+  color: #666;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .exam-types-page {
+    padding: 16px;
+  }
+
+  .exam-types-header h1 {
+    font-size: 24px;
+  }
+
+  .exam-types-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

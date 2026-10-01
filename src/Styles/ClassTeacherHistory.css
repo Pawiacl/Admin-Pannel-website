@@ -1,0 +1,415 @@
+/* =====================================================
+   CLASS TEACHER HISTORY PAGE
+===================================================== */
+
+.class-teacher-history-page {
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.class-teacher-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.class-teacher-history-header h1 {
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  color: #222222;
+}
+
+.class-teacher-history-header p {
+  margin: 7px 0 0 0;
+
+  font-size: 14px;
+
+  color: #666666;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.class-teacher-history-back-button {
+  min-width: 80px;
+  height: 38px;
+
+  padding: 0 16px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #333333;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.class-teacher-history-back-button:hover {
+  background: #f5f5f5;
+
+  border-color: #bfc4ca;
+}
+
+.class-teacher-history-back-button:active {
+  transform: scale(0.98);
+}
+
+
+/* =====================================================
+   FACULTY DETAILS CARD
+   Card background / border / shadow / padding
+   are handled by CommonCard.
+===================================================== */
+
+.class-teacher-faculty-card {
+  width: 100%;
+
+  margin-bottom: 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   COMMON CARD BODY
+===================================================== */
+
+.class-teacher-faculty-card .common-card-body {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   FACULTY DETAIL ITEM
+===================================================== */
+
+.class-teacher-faculty-card .common-card-body > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  min-width: 0;
+}
+
+
+/* =====================================================
+   FACULTY DETAIL LABEL
+===================================================== */
+
+.class-teacher-faculty-card span {
+  font-size: 12px;
+
+  font-weight: 600;
+
+  color: #777777;
+
+  text-transform: uppercase;
+}
+
+
+/* =====================================================
+   FACULTY DETAIL VALUE
+===================================================== */
+
+.class-teacher-faculty-card strong {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #222222;
+
+  word-break: break-word;
+}
+
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.class-teacher-history-error {
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  padding: 13px 15px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 6px;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.class-teacher-history-loading {
+  width: 100%;
+
+  padding: 40px 20px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  color: #666666;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.class-teacher-history-empty {
+  width: 100%;
+
+  padding: 45px 25px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 8px;
+}
+
+.class-teacher-history-empty h3 {
+  margin: 0 0 8px 0;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #333333;
+}
+
+.class-teacher-history-empty p {
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #777777;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   HISTORY TABLE CONTAINER
+===================================================== */
+
+.class-teacher-history-table-container {
+  width: 100%;
+
+  overflow-x: auto;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 2px 8px
+    rgba(0, 0, 0, 0.04);
+}
+
+
+/* =====================================================
+   HISTORY TABLE
+===================================================== */
+
+.class-teacher-history-table {
+  width: 100%;
+
+  min-width: 600px;
+
+  border-collapse: collapse;
+}
+
+
+/* =====================================================
+   TABLE HEADER
+===================================================== */
+
+.class-teacher-history-table th {
+  padding: 15px 18px;
+
+  text-align: left;
+
+  background: #f5f5f5;
+
+  border-bottom: 1px solid #dddddd;
+
+  color: #333333;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   TABLE CELLS
+===================================================== */
+
+.class-teacher-history-table td {
+  padding: 15px 18px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  color: #444444;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   LAST ROW
+===================================================== */
+
+.class-teacher-history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =====================================================
+   ROW HOVER
+===================================================== */
+
+.class-teacher-history-table tbody tr:hover {
+  background: #fafafa;
+}
+
+
+/* =====================================================
+   ACADEMIC YEAR
+===================================================== */
+
+.class-teacher-history-table td:first-child {
+  font-weight: 600;
+
+  color: #333333;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.class-teacher-history-table td:last-child {
+  font-weight: 500;
+
+  color: #555555;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+  .class-teacher-faculty-card
+    .common-card-body {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+  .class-teacher-history-page {
+    width: 100%;
+  }
+
+  .class-teacher-history-header {
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .class-teacher-history-header h1 {
+    font-size: 25px;
+  }
+
+  .class-teacher-history-back-button {
+    flex-shrink: 0;
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE - SMALL MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+  .class-teacher-history-header {
+    flex-direction: column;
+  }
+
+  .class-teacher-history-back-button {
+    align-self: flex-start;
+  }
+
+  .class-teacher-faculty-card
+    .common-card-body {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .class-teacher-history-table {
+    min-width: 500px;
+  }
+}

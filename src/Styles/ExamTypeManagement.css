@@ -1,0 +1,429 @@
+/* =====================================================
+   EXAM TYPE MANAGEMENT PAGE
+===================================================== */
+
+.exam-type-management-page {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.exam-type-management-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.exam-type-management-header h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.exam-type-management-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* =====================================================
+   CREATE BUTTON
+===================================================== */
+
+.exam-type-create-button {
+  flex-shrink: 0;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+}
+
+.exam-type-create-button:hover {
+  background: #1d4ed8;
+}
+
+.exam-type-create-button:active {
+  transform: translateY(1px);
+}
+
+/* =====================================================
+   SUCCESS MESSAGE
+===================================================== */
+
+.exam-type-success-message {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 14px;
+}
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.exam-type-error-message {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.exam-type-form-card {
+  margin-bottom: 24px;
+}
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.exam-type-form {
+  width: 100%;
+}
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+.exam-type-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.exam-type-form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.exam-type-form-group input {
+  width: 100%;
+  padding: 11px 14px;
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-size: 14px;
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.exam-type-form-group input:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(37, 99, 235, 0.1);
+}
+
+.exam-type-form-group input::placeholder {
+  color: #9ca3af;
+}
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.exam-type-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =====================================================
+   CANCEL BUTTON
+===================================================== */
+
+.exam-type-cancel-button {
+  padding: 10px 18px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.exam-type-cancel-button:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.exam-type-submit-button {
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+}
+
+.exam-type-submit-button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.exam-type-submit-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.exam-type-submit-button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* =====================================================
+   EXAM TYPE LIST
+===================================================== */
+
+.exam-type-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* =====================================================
+   EXAM TYPE CARD
+===================================================== */
+
+.exam-type-card {
+  width: 100%;
+}
+
+.exam-type-card-content {
+  min-height: 70px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+/* =====================================================
+   EXAM TYPE NAME
+===================================================== */
+
+.exam-type-name {
+  color: #111827;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* =====================================================
+   CARD ACTIONS
+===================================================== */
+
+.exam-type-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* =====================================================
+   EDIT BUTTON
+===================================================== */
+
+.exam-type-edit-button {
+  padding: 8px 14px;
+
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.exam-type-edit-button:hover {
+  background: #eff6ff;
+}
+
+/* =====================================================
+   DELETE BUTTON
+===================================================== */
+
+.exam-type-delete-button {
+  padding: 8px 14px;
+
+  border: 1px solid #dc2626;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #dc2626;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.exam-type-delete-button:hover {
+  background: #fef2f2;
+}
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.exam-type-empty {
+  padding: 50px 20px;
+
+  text-align: center;
+
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+  .exam-type-management-page {
+    padding: 16px;
+  }
+
+  /* HEADER */
+
+  .exam-type-management-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .exam-type-management-header h1 {
+    font-size: 24px;
+  }
+
+  .exam-type-create-button {
+    width: 100%;
+  }
+
+  /* FORM */
+
+  .exam-type-form-actions {
+    width: 100%;
+  }
+
+  .exam-type-cancel-button,
+  .exam-type-submit-button {
+    flex: 1;
+  }
+
+  /* OLD CARD SUPPORT */
+
+  .exam-type-card-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .exam-type-card-actions {
+    width: 100%;
+  }
+
+  .exam-type-edit-button,
+  .exam-type-delete-button {
+    flex: 1;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+  .exam-type-management-page {
+    padding: 12px;
+  }
+
+  .exam-type-management-header h1 {
+    font-size: 22px;
+  }
+
+  .exam-type-management-header p {
+    font-size: 13px;
+  }
+
+  .exam-type-form-actions {
+    flex-direction: column;
+  }
+
+  .exam-type-cancel-button,
+  .exam-type-submit-button {
+    width: 100%;
+    flex: none;
+  }
+}

@@ -1,0 +1,382 @@
+/* =========================================
+   RESULT STUDENTS PAGE
+========================================= */
+
+.result-students-page {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.result-students-header {
+  margin-bottom: 24px;
+}
+
+.result-students-header h1 {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.result-students-header p {
+  margin: 6px 0 0;
+
+  font-size: 14px;
+  color: #777;
+}
+
+/* =========================================
+   STUDENT CARD
+========================================= */
+
+.result-students-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.result-students-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+/* =========================================
+   STUDENT TABLE
+========================================= */
+
+.result-students-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 700px;
+}
+
+.result-students-table th,
+.result-students-table td {
+  padding: 14px 16px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  font-size: 14px;
+}
+
+.result-students-table th {
+  font-weight: 700;
+
+  background: #f7f7f7;
+}
+
+.result-students-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* =========================================
+   TOTAL MARKS
+========================================= */
+
+.result-total-marks {
+  font-weight: 600;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.result-status-pass,
+.result-status-fail {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.result-status-pass {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.result-status-fail {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/* =========================================
+   VIEW BUTTON
+========================================= */
+
+.result-student-view-button {
+  border: none;
+
+  padding: 8px 14px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.result-student-view-button:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   STUDENT DETAIL CARD
+========================================= */
+
+.result-student-detail-card {
+  width: 100%;
+
+  margin-top: 24px;
+
+  box-sizing: border-box;
+}
+
+.result-student-detail {
+  width: 100%;
+}
+
+/* =========================================
+   DETAIL HEADER
+========================================= */
+
+.result-student-detail-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 24px;
+}
+
+.result-student-detail-header h2 {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.result-student-detail-header p {
+  margin: 5px 0 0;
+
+  font-size: 14px;
+  color: #777;
+}
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.result-student-close-button {
+  border: none;
+
+  padding: 9px 15px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   STUDENT INFO
+========================================= */
+
+.result-student-info {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-bottom: 24px;
+}
+
+.result-student-info div {
+  padding: 14px;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 8px;
+}
+
+.result-student-info span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 12px;
+  color: #777;
+}
+
+.result-student-info strong {
+  display: block;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   SUBJECT TABLE
+========================================= */
+
+.result-student-subject-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.result-student-subject-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 600px;
+}
+
+.result-student-subject-table th,
+.result-student-subject-table td {
+  padding: 13px 15px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  font-size: 14px;
+}
+
+.result-student-subject-table th {
+  background: #f7f7f7;
+
+  font-weight: 700;
+}
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.result-student-total {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 20px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.result-student-total span {
+  font-size: 15px;
+  color: #666;
+}
+
+.result-student-total strong {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.result-students-loading {
+  width: 100%;
+
+  padding: 60px 20px;
+
+  text-align: center;
+
+  color: #777;
+
+  font-size: 15px;
+}
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.result-students-empty {
+  width: 100%;
+
+  padding: 50px 20px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .result-student-info {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .result-students-page {
+    padding: 16px;
+  }
+
+  .result-students-header h1 {
+    font-size: 24px;
+  }
+
+  .result-student-detail-header {
+    align-items: flex-start;
+  }
+
+  .result-student-info {
+    grid-template-columns: 1fr;
+  }
+
+  .result-student-total {
+    justify-content: space-between;
+  }
+
+}

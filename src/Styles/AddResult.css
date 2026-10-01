@@ -1,0 +1,376 @@
+/* ==========================================
+   ADD RESULT PAGE
+========================================== */
+
+.add-result-page {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.add-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.add-result-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.add-result-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.add-result-back-button {
+  border: none;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-result-back-button:hover {
+  background: #e5e7eb;
+}
+
+
+/* ==========================================
+   SELECTION CARD
+========================================== */
+
+.add-result-selection-card {
+  margin-bottom: 24px;
+}
+
+.add-result-selection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+/* ==========================================
+   FORM FIELD
+========================================== */
+
+.add-result-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.add-result-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.add-result-field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.add-result-field select:focus {
+  border-color: #2563eb;
+}
+
+.add-result-field select:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+
+/* ==========================================
+   STUDENTS CARD
+========================================== */
+
+.add-result-students-card {
+  margin-bottom: 24px;
+}
+
+.add-result-students-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.add-result-students-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.add-result-students-header p {
+  margin: 5px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.add-result-max-marks {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.add-result-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.add-result-table {
+  width: 100%;
+  min-width: max-content;
+  border-collapse: collapse;
+}
+
+.add-result-table th {
+  padding: 13px 14px;
+  text-align: left;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.add-result-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.add-result-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.add-result-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+
+/* ==========================================
+   FIXED STUDENT INFORMATION COLUMNS
+========================================== */
+
+.add-result-table th:nth-child(1),
+.add-result-table td:nth-child(1) {
+  min-width: 80px;
+}
+
+.add-result-table th:nth-child(2),
+.add-result-table td:nth-child(2) {
+  min-width: 180px;
+}
+
+.add-result-table th:nth-child(3),
+.add-result-table td:nth-child(3) {
+  min-width: 100px;
+}
+
+
+/* ==========================================
+   SUBJECT COLUMNS
+========================================== */
+
+.add-result-table th:nth-child(n + 4),
+.add-result-table td:nth-child(n + 4) {
+  min-width: 145px;
+  text-align: center;
+}
+
+
+/* ==========================================
+   MARK INPUT
+========================================== */
+
+.add-result-table input {
+  width: 110px;
+  min-height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  text-align: center;
+}
+
+.add-result-table input:focus {
+  border-color: #2563eb;
+}
+
+.add-result-table input:hover {
+  border-color: #9ca3af;
+}
+
+
+/* ==========================================
+   REMOVE NUMBER INPUT ARROWS
+========================================== */
+
+.add-result-table input::-webkit-outer-spin-button,
+.add-result-table input::-webkit-inner-spin-button {
+  margin: 0;
+}
+
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.add-result-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.add-result-cancel-button,
+.add-result-save-button {
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-result-cancel-button {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.add-result-cancel-button:hover {
+  background: #e5e7eb;
+}
+
+.add-result-save-button {
+  background: #1f2937;
+  color: #ffffff;
+}
+
+.add-result-save-button:hover {
+  background: #111827;
+}
+
+.add-result-save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.add-result-loading {
+  padding: 30px;
+  text-align: center;
+  color: #6b7280;
+}
+
+
+/* ==========================================
+   EMPTY
+========================================== */
+
+.add-result-empty {
+  padding: 30px;
+  text-align: center;
+  color: #6b7280;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+  .add-result-selection {
+    grid-template-columns: 1fr;
+  }
+
+  .add-result-students-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .add-result-page {
+    padding: 16px;
+  }
+
+  .add-result-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .add-result-header h1 {
+    font-size: 24px;
+  }
+
+  .add-result-actions {
+    justify-content: stretch;
+    flex-direction: column;
+  }
+
+  .add-result-cancel-button,
+  .add-result-save-button {
+    width: 100%;
+  }
+
+  .add-result-table th,
+  .add-result-table td {
+    padding: 10px;
+  }
+
+  .add-result-table input {
+    width: 95px;
+  }
+}

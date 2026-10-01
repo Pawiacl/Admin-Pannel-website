@@ -1,0 +1,22 @@
+/* =====================================================
+   EDIT BUTTON
+===================================================== */
+
+.student-edit-button {
+  padding: 6px 14px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #1976d2;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.student-edit-button:hover {
+  background-color: #1565c0;
+}

@@ -1,0 +1,280 @@
+/* =====================================================
+   SYLLABUS PAGE
+===================================================== */
+
+.syllabus-page {
+
+  width: 100%;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.syllabus-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 24px;
+
+}
+
+
+.syllabus-header h1 {
+
+  margin: 0;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+}
+
+
+.syllabus-header p {
+
+  margin: 6px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.syllabus-message {
+
+  margin-bottom: 20px;
+
+  padding: 12px 16px;
+
+  border-radius: 8px;
+
+  background: #fee2e2;
+
+  color: #b91c1c;
+
+  font-size: 14px;
+
+}
+
+
+/* =====================================================
+   CURRENT YEAR
+===================================================== */
+
+.syllabus-year {
+
+  margin-bottom: 20px;
+
+  font-size: 15px;
+
+  color: #374151;
+
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.syllabus-loading {
+
+  padding: 50px 20px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.syllabus-empty {
+
+  padding: 50px 20px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  font-size: 15px;
+
+}
+
+
+/* =====================================================
+   SUBJECT CARD GRID
+===================================================== */
+
+.syllabus-card-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(240px, 1fr)
+    );
+
+  gap: 20px;
+
+}
+
+
+/* =====================================================
+   SUBJECT CARD
+===================================================== */
+
+.syllabus-subject-card {
+
+  min-height: 220px;
+
+  cursor: pointer;
+
+}
+
+
+.syllabus-subject-card-content {
+
+  min-height: 220px;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+}
+
+
+.syllabus-subject-card-content h2 {
+
+  margin: 0 0 12px;
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+}
+
+
+.syllabus-academic-year {
+
+  margin: 0 0 10px;
+
+  font-size: 14px;
+
+  color: #6b7280;
+
+}
+
+
+.syllabus-topic-count {
+
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #374151;
+
+  font-weight: 600;
+
+}
+
+
+/* =====================================================
+   VIEW TOPICS BUTTON
+===================================================== */
+
+.syllabus-view-button {
+
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 10px 16px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+
+}
+
+
+.syllabus-view-button:hover {
+
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (
+  max-width: 768px
+) {
+
+  .syllabus-page {
+
+    padding: 16px;
+
+  }
+
+
+  .syllabus-header h1 {
+
+    font-size: 24px;
+
+  }
+
+
+  .syllabus-card-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+}

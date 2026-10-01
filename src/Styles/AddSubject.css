@@ -1,0 +1,980 @@
+.add-subject-page {
+
+  width: 100%;
+
+  min-height: 100%;
+
+  padding: 32px;
+
+  box-sizing: border-box;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.add-subject-header {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+
+}
+
+
+.add-subject-header h1 {
+
+  margin: 10px 0 0;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+}
+
+
+.add-subject-header p {
+
+  margin: 6px 0 0;
+
+  font-size: 14px;
+
+  color: #6b7280;
+
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.add-subject-back-button {
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #e5e7eb;
+
+  color: #374151;
+
+  padding: 7px 12px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+.add-subject-back-button:hover {
+
+  background: #d1d5db;
+
+}
+
+
+/* =========================
+   MESSAGES
+========================= */
+
+.add-subject-success-message {
+
+  margin-bottom: 16px;
+
+  padding: 12px 16px;
+
+  border-radius: 6px;
+
+  background: #dcfce7;
+
+  color: #166534;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+
+.add-subject-error-message {
+
+  margin-bottom: 16px;
+
+  padding: 12px 16px;
+
+  border-radius: 6px;
+
+  background: #fee2e2;
+
+  color: #991b1b;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.add-subject-form-card {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  overflow: visible !important;
+
+  position: relative;
+
+  z-index: 10;
+
+}
+
+
+/* =========================
+   MAIN FORM
+========================= */
+
+.add-subject-form {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+
+  width: 100%;
+
+  overflow: visible;
+
+}
+
+
+/* =========================
+   FIELD
+========================= */
+
+.add-subject-field {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  min-width: 0;
+
+  position: relative;
+
+  overflow: visible;
+
+}
+
+
+.add-subject-field label {
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #374151;
+
+}
+
+
+.add-subject-field input,
+.add-subject-field select {
+
+  width: 100%;
+
+  height: 42px;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  font-size: 14px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+}
+
+
+.add-subject-field input:focus,
+.add-subject-field select:focus {
+
+  border-color: #2563eb;
+
+}
+
+
+.add-subject-field input[type="file"] {
+
+  height: auto;
+
+  min-height: 42px;
+
+  padding: 9px 12px;
+
+}
+
+
+/* =========================
+   CUSTOM DROPDOWN
+========================= */
+
+.custom-dropdown {
+
+  width: 100%;
+
+  position: relative;
+
+  z-index: 1000;
+
+}
+
+
+/* =========================
+   DROPDOWN BUTTON
+========================= */
+
+.custom-dropdown-button {
+
+  width: 100%;
+
+  height: 42px;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  text-align: left;
+
+}
+
+
+.custom-dropdown-button:hover {
+
+  border-color: #9ca3af;
+
+}
+
+
+.custom-dropdown-button:focus {
+
+  outline: none;
+
+  border-color: #2563eb;
+
+}
+
+
+.custom-dropdown-button.disabled {
+
+  background: #f3f4f6;
+
+  color: #9ca3af;
+
+  cursor: not-allowed;
+
+}
+
+
+.custom-dropdown-arrow {
+
+  font-size: 16px;
+
+  color: #6b7280;
+
+}
+
+
+/* =========================
+   DROPDOWN MENU
+========================= */
+
+.custom-dropdown-menu {
+
+  position: absolute !important;
+
+  top: calc(100% + 4px) !important;
+
+  bottom: auto !important;
+
+  left: 0;
+
+  right: auto;
+
+  width: 100%;
+
+  max-height: 220px;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  box-shadow:
+    0 8px 20px
+    rgba(0, 0, 0, 0.12);
+
+  z-index: 999999;
+
+  padding: 4px 0;
+
+  box-sizing: border-box;
+
+}
+
+
+/* =========================
+   DROPDOWN OPTION
+========================= */
+
+.custom-dropdown-option {
+
+  width: 100%;
+
+  min-height: 38px;
+
+  padding: 8px 12px;
+
+  border: none;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 14px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+}
+
+
+.custom-dropdown-option:hover {
+
+  background: #f3f4f6;
+
+}
+
+
+.custom-dropdown-option.selected {
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-weight: 600;
+
+}
+
+
+/* =========================
+   ACADEMIC YEARS
+========================= */
+
+.add-subject-academic-years {
+
+  grid-column: 1 / -1;
+
+  width: 100%;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+
+  background: #f9fafb;
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+
+.add-subject-section-title {
+
+  margin-bottom: 16px;
+
+}
+
+
+.add-subject-section-title h3 {
+
+  margin: 0;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+}
+
+
+.add-subject-section-title p {
+
+  margin: 5px 0 0;
+
+  font-size: 13px;
+
+  color: #6b7280;
+
+}
+
+
+.add-subject-year-preview {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+}
+
+
+.add-subject-year-card {
+
+  min-width: 120px;
+
+  padding: 12px 16px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #1d4ed8;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-align: center;
+
+}
+
+
+/* =========================
+   TOPICS
+========================= */
+
+.add-subject-topics-section {
+
+  grid-column: 1 / -1;
+
+  width: 100%;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+
+.add-subject-topic-form {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+
+  position: relative;
+
+  overflow: visible;
+
+}
+
+
+.add-subject-topic-description {
+
+  grid-column: 1 / -1;
+
+}
+
+
+.add-subject-topic-description textarea {
+
+  width: 100%;
+
+  min-height: 100px;
+
+  padding: 10px 12px;
+
+  box-sizing: border-box;
+
+  resize: vertical;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+}
+
+
+.add-subject-topic-description textarea:focus {
+
+  border-color: #2563eb;
+
+}
+
+
+/* =========================
+   FILE
+========================= */
+
+.add-subject-file-name {
+
+  font-size: 12px;
+
+  color: #6b7280;
+
+  word-break: break-word;
+
+}
+
+
+/* =========================
+   ADD TOPIC BUTTON
+========================= */
+
+.add-subject-topic-action {
+
+  display: flex;
+
+  align-items: flex-end;
+
+}
+
+
+.add-subject-add-topic-button {
+
+  height: 42px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+.add-subject-add-topic-button:hover {
+
+  background: #1d4ed8;
+
+}
+
+
+/* =========================
+   ADDED TOPICS
+========================= */
+
+.add-subject-added-topics {
+
+  margin-top: 24px;
+
+}
+
+
+.add-subject-added-topics h4 {
+
+  margin: 0 0 12px;
+
+  font-size: 16px;
+
+  color: #111827;
+
+}
+
+
+.add-subject-topic-list {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+}
+
+
+.add-subject-topic-card {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 16px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+
+  background: #f9fafb;
+
+}
+
+
+.add-subject-topic-content {
+
+  min-width: 0;
+
+}
+
+
+.add-subject-topic-year {
+
+  display: inline-block;
+
+  margin-bottom: 6px;
+
+  padding: 4px 8px;
+
+  border-radius: 4px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+}
+
+
+.add-subject-topic-content h4 {
+
+  margin: 0;
+
+  font-size: 15px;
+
+  color: #111827;
+
+}
+
+
+.add-subject-topic-content p {
+
+  margin: 6px 0;
+
+  font-size: 13px;
+
+  color: #6b7280;
+
+  line-height: 1.5;
+
+}
+
+
+.add-subject-topic-content small {
+
+  color: #6b7280;
+
+  font-size: 12px;
+
+}
+
+
+/* =========================
+   REMOVE TOPIC
+========================= */
+
+.add-subject-remove-topic-button {
+
+  flex-shrink: 0;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #fee2e2;
+
+  color: #b91c1c;
+
+  padding: 8px 12px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+.add-subject-remove-topic-button:hover {
+
+  background: #fecaca;
+
+}
+
+
+/* =========================
+   FORM ACTIONS
+========================= */
+
+.add-subject-form-actions {
+
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 8px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e5e7eb;
+
+}
+
+
+.add-subject-cancel-button,
+.add-subject-save-button {
+
+  min-width: 100px;
+
+  height: 42px;
+
+  padding: 0 18px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+.add-subject-cancel-button {
+
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  color: #374151;
+
+}
+
+
+.add-subject-cancel-button:hover {
+
+  background: #f3f4f6;
+
+}
+
+
+.add-subject-save-button {
+
+  border: none;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+}
+
+
+.add-subject-save-button:hover {
+
+  background: #1d4ed8;
+
+}
+
+
+.add-subject-cancel-button:disabled,
+.add-subject-save-button:disabled {
+
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .add-subject-page {
+
+    padding: 20px;
+
+  }
+
+
+  .add-subject-form {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .add-subject-topic-form {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .add-subject-topic-description {
+
+    grid-column: auto;
+
+  }
+
+
+  .add-subject-academic-years,
+  .add-subject-topics-section,
+  .add-subject-form-actions {
+
+    grid-column: auto;
+
+  }
+
+
+  .add-subject-topic-card {
+
+    flex-direction: column;
+
+  }
+
+
+  .add-subject-remove-topic-button {
+
+    align-self: flex-start;
+
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .add-subject-page {
+
+    padding: 16px;
+
+  }
+
+
+  .add-subject-header h1 {
+
+    font-size: 24px;
+
+  }
+
+
+  .add-subject-form-actions {
+
+    flex-direction: column;
+
+  }
+
+
+  .add-subject-cancel-button,
+  .add-subject-save-button {
+
+    width: 100%;
+
+  }
+
+}

@@ -1,0 +1,345 @@
+/* =====================================================
+   SYLLABUS TOPICS PAGE
+===================================================== */
+
+.syllabus-topics-page {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.syllabus-topics-header {
+  margin-bottom: 24px;
+}
+
+.syllabus-topics-header h1 {
+  margin: 12px 0 6px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.syllabus-topics-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.syllabus-topics-back-button {
+  padding: 8px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.syllabus-topics-back-button:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.syllabus-topics-message {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+/* =====================================================
+   TOPIC SEARCH
+===================================================== */
+
+.subject-topic-search {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.subject-topic-search input {
+  width: 100%;
+  max-width: 400px;
+  padding: 11px 14px;
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-size: 14px;
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.subject-topic-search input:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(37, 99, 235, 0.1);
+}
+
+.subject-topic-search input::placeholder {
+  color: #9ca3af;
+}
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.syllabus-topics-loading {
+  padding: 50px 20px;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.syllabus-topics-empty {
+  padding: 50px 20px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* =====================================================
+   TOPIC CARD GRID
+===================================================== */
+
+.syllabus-topics-card-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(280px, 1fr)
+    );
+
+  gap: 20px;
+}
+
+/* =====================================================
+   TOPIC CARD
+===================================================== */
+
+.syllabus-topic-card {
+  min-height: 250px;
+}
+
+.syllabus-topic-card-content {
+  min-height: 250px;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* =====================================================
+   TOPIC NUMBER
+===================================================== */
+
+.syllabus-topic-number {
+  margin-bottom: 10px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+/* =====================================================
+   TOPIC NAME
+===================================================== */
+
+.syllabus-topic-card-content h2 {
+  margin: 0 0 12px;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.syllabus-topic-description {
+  margin: 0 0 18px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+/* =====================================================
+   FILE STATUS
+===================================================== */
+
+.syllabus-topic-file {
+  margin-top: auto;
+
+  margin-bottom: 18px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #374151;
+}
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.syllabus-topic-actions {
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.syllabus-view-pdf-button,
+.syllabus-download-pdf-button {
+  flex: 1;
+
+  min-width: 120px;
+
+  padding: 10px 14px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* =====================================================
+   VIEW PDF
+===================================================== */
+
+.syllabus-view-pdf-button {
+  background: #2563eb;
+
+  color: #ffffff;
+}
+
+.syllabus-view-pdf-button:hover:not(:disabled) {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+/* =====================================================
+   DOWNLOAD PDF
+===================================================== */
+
+.syllabus-download-pdf-button {
+  background: #111827;
+
+  color: #ffffff;
+}
+
+.syllabus-download-pdf-button:hover:not(:disabled) {
+  background: #374151;
+
+  transform: translateY(-1px);
+}
+
+/* =====================================================
+   DISABLED
+===================================================== */
+
+.syllabus-view-pdf-button:disabled,
+.syllabus-download-pdf-button:disabled {
+  background: #d1d5db;
+
+  color: #6b7280;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (
+  max-width: 768px
+) {
+
+  .syllabus-topics-page {
+    padding: 16px;
+  }
+
+  .syllabus-topics-header h1 {
+    font-size: 24px;
+  }
+
+  .subject-topic-search input {
+    max-width: 100%;
+  }
+
+  .syllabus-topics-card-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .syllabus-topic-actions {
+    flex-direction: column;
+  }
+
+  .syllabus-view-pdf-button,
+  .syllabus-download-pdf-button {
+    width: 100%;
+  }
+
+}
+
