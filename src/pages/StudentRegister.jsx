@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import API from "../services/api";
 import CommonCard from "../components/CommonCard";
-import "../styles/Register.css";
+import "../Styles/Register.css";
 
 function StudentRegister() {
   const navigate = useNavigate();
