@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import API from "../services/api";
 import { useNavigate } from "react-router-dom";
 import CommonCard from "../components/CommonCard";
-import "../styles/Register.css";
+import "../Styles/Register.css";
 
 function FacultyRegister() {
   const navigate = useNavigate();
